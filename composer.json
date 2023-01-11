@@ -1,0 +1,33 @@
+{
+  "name": "weebel/framework",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "weebel/application": "dev-master",
+    "weebel/configuration": "dev-master",
+    "weebel/console": "dev-master",
+    "weebel/container": "dev-master",
+    "weebel/contracts": "dev-master",
+    "weebel/controller-caller": "dev-master",
+    "weebel/dispatcher": "dev-master",
+    "weebel/http-kernel": "dev-master",
+    "weebel/router": "dev-master"
+  },
+  "autoload": {
+    "psr-4": {
+      "Weebel\\Framework\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Weebel\\Framework\\Tests\\": "tests/"
+    }
+  },
+  "require-dev": {
+    "friendsofphp/php-cs-fixer": "^3.13",
+    "mockery/mockery": "^1.5",
+    "phpunit/phpunit": "^9.5",
+    "roave/security-advisories": "dev-latest",
+    "symfony/var-dumper": "^6.0"
+  }
+}
