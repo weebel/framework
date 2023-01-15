@@ -25,13 +25,16 @@ class KernelManager extends BaseKernelManager
         ConfigurationProvider::class
     ];
 
+    protected $baseModeProviders = [
+        'console' => [
+            ConsoleProvider::class
+        ]
+    ];
+
     protected $modeProviders = [
         'http' => [
             RouterProvider::class,
             ControllerCallerProvider::class
-        ],
-        'console' => [
-            ConsoleProvider::class
         ]
     ];
 
